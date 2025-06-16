@@ -47,7 +47,7 @@ export function SeedPhraseInput({
             type="button"
             onClick={handleSendSeed}
           >
-            <Image src="/send-ico.svg" alt="Send" width={18} height={18} className="mx-auto"/>
+            Continue
           </button>
         </div>
       )}

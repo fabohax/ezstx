@@ -45,8 +45,8 @@ export default function AddressPage() {
         <h2 className='text-4xl mt-8 text-gray-700'></h2>
         <p className='mt-4 mb-8 text-sm text-[#777]'>
           {address}
-          {isLoggedIn && <span className="ml-2 text-green-500 font-semibold select-none">•</span>}
         </p>
+        <p>{isLoggedIn && <span className="text-green-500 font-semibold select-none">•</span>}</p>
       </div>
     </div>
   );

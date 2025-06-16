@@ -3,7 +3,7 @@ import { Inter, Chakra_Petch } from "next/font/google";
 import Link from "next/link";
 import { GetInButton } from "@/components/GetIn";
 import { Providers } from '@/components/ui/provider';
-import { Home } from "lucide-react"
+import Image from "next/image";
 import "./globals.css";
 
 const inter = Inter({
@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${chakraPetch.variable} antialiased`}>
         <Link href="/" className="fixed top-6 left-6 z-50">
-          <Home/>
+          <Image src="/home.svg" alt="home" width={27} height={27} />
         </Link>
         <Providers>
           <>
