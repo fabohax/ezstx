@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${chakraPetch.variable} antialiased`}>
         <Link href="/" className="fixed top-6 left-6 z-50">
-          <Image src="/home.svg" alt="home" width={27} height={27} />
+          <Image src="/home.svg" alt="home" width={27} height={27} className="m-2" />
         </Link>
         <Providers>
           <>

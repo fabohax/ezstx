@@ -90,7 +90,7 @@ export default function UserModal({ onClose }: UserModalProps) {
           <div className='flex'>
             <button
               type="button"
-              className="w-12 h-12 bg-gradient-to-br from-gray-300 to-gray-500 rounded-full p-4 cursor-pointer select-none"
+              className="w-9 h-9 bg-gradient-to-br from-gray-300 to-gray-500 rounded-full p-4 cursor-pointer select-none"
               onClick={onClose}
               aria-label="Profile"
             >
