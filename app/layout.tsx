@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Chakra_Petch } from "next/font/google";
-import Link from "next/link";
-import { GetInButton } from "@/components/GetIn";
 import { Providers } from '@/components/ui/provider';
 import { Toaster } from "@/components/ui/sonner"
-import Image from "next/image";
 import "./globals.css";
 
 const inter = Inter({
@@ -19,7 +16,7 @@ const chakraPetch = Chakra_Petch({
 });
 
 export const metadata: Metadata = {
-  title: "ezstx",
+  title: "zyfr | 40230",
   description: "easy on-boarding for all",
 };
 
@@ -31,12 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body className={`${inter.variable} ${chakraPetch.variable} antialiased`}>
-        <Link href="/" className="fixed top-6 left-6 z-50">
-          <Image src="/home.svg" alt="home" width={27} height={27} className="m-2" />
-        </Link>
         <Providers>
           <>
-            <GetInButton />
             {children}
           </>
         </Providers>
